@@ -1,0 +1,15 @@
+{
+    "id": "/RequestChat",
+    "type": "object",
+    "properties": {
+      "firstName": {"type" : "string"},
+      "lastName": {"type" : "string"},
+      "email": {"type" : "string"},
+      "message" : {"type" : "string"},
+      "botUser" :{"$ref": "/BotUser"},
+      "conversationHistory" : {"$ref" : "/ConversationHistoryList"},
+      "metadata" : {"type" : "object"},
+      "actions" : {"$ref" : "/ActionsList"}
+    },
+    "required": ["firstName" , "lastName" , "email" , "email" , "botUser" ]
+  }

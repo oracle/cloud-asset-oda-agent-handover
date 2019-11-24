@@ -1,0 +1,7 @@
+{
+    "id": "/ActionsList",
+    "type": "array",
+    "items": {
+        "$ref": "/ActionItem"
+    }
+}

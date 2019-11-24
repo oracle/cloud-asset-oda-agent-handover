@@ -1,0 +1,13 @@
+{
+    "id": "/ChatDelayed",
+    "type": "object",
+    "properties": {
+        "type": {
+            "type": "string"
+        },
+        "payload": {
+            "$ref": "/MessagePayload"
+        }
+    },
+    "required": ["payload", "type"]
+}

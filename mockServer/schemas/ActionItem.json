@@ -1,0 +1,10 @@
+{
+    "id" : "/ActionItem",
+    "type" : "object",
+    "properties" : {
+        "action" : {"type" : "string"},
+        "description" : {"type" : "string"},
+        "label" : {"type" : "string"}
+    },
+    "required": ["action" , "description", "label"]
+}

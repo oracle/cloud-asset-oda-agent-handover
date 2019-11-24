@@ -1,0 +1,11 @@
+{
+    "id": "/MessagePayload",
+    "type": "object",
+    "properties": {
+      "webhookChannelId": {"type" : "string"},
+      "channelName": {"type" : "string"},
+      "text": {"type" : "string"},
+      "type" : {"type" : "string"}
+    },
+    "required": ["webhookChannelId" , "channelName" , "text" , "type"  ]
+  }

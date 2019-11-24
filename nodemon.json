@@ -1,0 +1,3 @@
+{
+    "ignore": ["docs", ".idea", "db.json" ,  ".git", "node_modules"]
+}

@@ -1,0 +1,10 @@
+{
+    "id" : "/ConversationHistory",
+    "type" : "object",
+    "properties" : {
+        "payload" : {"type" : "string"},
+        "source" : {"type" : "string"},
+        "createdOn" : {"type" : "integer"}
+    },
+    "required": ["payload" , "source", "createdOn"]
+}

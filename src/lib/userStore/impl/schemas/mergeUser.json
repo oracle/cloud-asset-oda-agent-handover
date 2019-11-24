@@ -1,0 +1,12 @@
+{
+    "id" : "/mergeUser",
+    "type" : "object",
+    "properties" : {
+        "userId" : {"type" : "string"},
+        "channelName" : {"type" : "string"},
+        "userChannelId" : {"type" : "string"},
+        "channelId" : {"type" : "string"},
+        "agentSessionId" : {"type" : "string"}
+    },
+    "required" : ["userId"]
+}

@@ -1,0 +1,344 @@
+{
+    "odaSender": {
+        "ChatAccepted": {
+            "valid": {
+                "type": "accepted",
+                "payload": {
+                    "message": "Hello my name is Agent, how can I help you?",
+                    "sessionId": "123456",
+                    "botUser": {
+                        "userId": "3246969"
+                    }
+                }
+            },
+            "invalid": [{
+                    "payload": {
+                        "message": "Hello my name is Agent, how can I help you?",
+                        "sessionId": "123456",
+                        "botUser": {
+                            "userId": "3246969"
+                        }
+                    }
+                },
+                {
+                    "type": "accepted"
+                },
+                {
+                    "type": "accepted",
+                    "payload": {
+                        "sessionId": "123456",
+                        "botUser": {
+                            "userId": "3246969"
+                        }
+                    }
+                },
+                {
+                    "type": "accepted",
+                    "payload": {
+                        "message": "Hello my name is Agent, how can I help you?",
+                        "botUser": {
+                            "userId": "3246969"
+                        }
+                    }
+                },
+                {
+                    "type": "accepted",
+                    "payload": {
+                        "message": "Hello my name is Agent, how can I help you?",
+                        "sessionId": "123456"
+                    }
+                },
+                {
+                    "type": "accepted",
+                    "payload": {
+                        "message": "Hello my name is Agent, how can I help you?",
+                        "sessionId": "123456",
+                        "botUser": {}
+                    }
+                },
+                {
+                    "payload": {
+                        "message": "Hello my name is Agent, how can I help you?",
+                        "sessionId": "123456",
+                        "botUser": {}
+                    }
+                }
+            ]
+        },
+        "ChatDelayed": {
+            "valid": {
+                "type": "delayed",
+                "payload": {
+                    "message": "Our agents are busy serving others, your waiting time is 15 mins",
+                    "botUser": {
+                        "userId": "3246969"
+                    }
+                }
+            },
+            "invalid": [{
+                    "payload": {
+                        "message": "Our agents are busy serving others, your waiting time is 15 mins",
+                        "botUser": {
+                            "userId": "3246969"
+                        }
+                    }
+                },
+                {
+                    "type": "delayed"
+                },
+                {
+                    "type": "delayed",
+                    "payload": {
+                        "botUser": {
+                            "userId": "3246969"
+                        }
+                    }
+                },
+                {
+                    "type": "delayed",
+                    "payload": {
+                        "message": "Our agents are busy serving others, your waiting time is 15 mins"
+                    }
+                },
+                {
+                    "type": "delayed",
+                    "payload": {
+                        "message": "Our agents are busy serving others, your waiting time is 15 mins",
+                        "botUser": {}
+                    }
+                }
+            ]
+        },
+        "ChatMessage": {
+            "valid": {
+                "type": "agent",
+                "payload": {
+                    "message": "Hello my name is Agent, how can I help you?",
+                    "sessionId": "123456",
+                    "botUser": {
+                        "userId": "3246969"
+                    }
+                }
+            },
+            "invalid": [{
+
+                    "payload": {
+                        "message": "Hello my name is Agent, how can I help you?",
+                        "sessionId": "123456",
+                        "botUser": {
+                            "userId": "3246969"
+                        }
+                    }
+                },
+                {
+                    "type": "agent"
+
+                },
+                {
+                    "type": "agent",
+                    "payload": {
+
+                        "sessionId": "123456",
+                        "botUser": {
+                            "userId": "3246969"
+                        }
+                    }
+                },
+                {
+                    "type": "agent",
+                    "payload": {
+                        "message": "Hello my name is Agent, how can I help you?",
+
+                        "botUser": {
+                            "userId": "3246969"
+                        }
+                    }
+                },
+                {
+                    "type": "agent",
+                    "payload": {
+                        "message": "Hello my name is Agent, how can I help you?",
+                        "sessionId": "123456"
+                    }
+                },
+                {
+                    "type": "agent",
+                    "payload": {
+                        "message": "Hello my name is Agent, how can I help you?",
+                        "sessionId": "123456",
+                        "botUser": {}
+                    }
+                }
+
+            ]
+        },
+        "ChatRejected": {
+            "valid": {
+                "type": "rejected",
+                "payload": {
+                    "message": "sorry, you contacted us out of office hours",
+                    "botUser": {
+                        "userId": "3246969"
+                    }
+                }
+            },
+            "invalid": [{
+                    "payload": {
+                        "message": "sorry, you contacted us out of office hours",
+                        "botUser": {
+                            "userId": "3246969"
+                        }
+                    }
+                },
+                {
+                    "type": "rejected"
+                },
+                {
+                    "type": "rejected",
+                    "payload": {
+                        "botUser": {
+                            "userId": "3246969"
+                        }
+                    }
+                },
+                {
+                    "type": "rejected",
+                    "payload": {
+                        "message": "sorry, you contacted us out of office hours"
+                    }
+                },
+                {
+                    "type": "rejected",
+                    "payload": {
+                        "message": "sorry, you contacted us out of office hours",
+                        "botUser": {}
+                    }
+                }
+
+            ]
+        },
+        "ChatTerminated": {
+            "valid": {
+                "type": "agentLeft",
+                "payload": {
+                    "message": "Thanks for contacting us, you will be redirected to bot",
+                    "sessionId": "123456",
+                    "botUser": {
+                        "userId": "3246969"
+                    }
+                }
+            },
+            "invalid": [{
+                    "payload": {
+                        "message": "Thanks for contacting us, you will be redirected to bot",
+                        "sessionId": "123456",
+                        "botUser": {
+                            "userId": "3246969"
+                        }
+                    }
+                },
+                {
+                    "type": "agentLeft"
+                },
+                {
+                    "type": "agentLeft",
+                    "payload": {
+                        "sessionId": "123456",
+                        "botUser": {
+                            "userId": "3246969"
+                        }
+                    }
+                },
+                {
+                    "type": "agentLeft",
+                    "payload": {
+                        "message": "Thanks for contacting us, you will be redirected to bot",
+                        "botUser": {
+                            "userId": "3246969"
+                        }
+                    }
+                },
+                {
+                    "type": "agentLeft",
+                    "payload": {
+                        "message": "Thanks for contacting us, you will be redirected to bot",
+                        "sessionId": "123456"
+                    }
+                },
+                {
+                    "type": "agentLeft",
+                    "payload": {
+                        "message": "Thanks for contacting us, you will be redirected to bot",
+                        "sessionId": "123456",
+                        "botUser": {}
+                    }
+                }
+            ]
+        },
+        "AgentAction": {
+            "valid": {
+                "type": "agentAction",
+                "payload": {
+                    "action": "Payments",
+                    "sessionId": "123456",
+                    "botUser": {
+                        "userId": "3246969"
+                    }
+                }
+            },
+            "invalid": [{
+                    "payload": {
+                        "action": "Payments",
+                        "sessionId": "123456",
+                        "botUser": {
+                            "userId": "3246969"
+                        }
+                    }
+                },
+                {
+                    "type": "agentAction"
+                },
+                {
+                    "type": "agentAction",
+                    "payload": {
+                        "sessionId": "123456",
+                        "botUser": {
+                            "userId": "3246969"
+                        }
+                    }
+                },
+                {
+                    "type": "agentAction",
+                    "payload": {
+                        "action": "Payments",
+                        "botUser": {
+                            "userId": "3246969"
+                        }
+                    }
+                },
+                {
+                    "type": "agentAction",
+                    "payload": {
+                        "action": "Payments",
+                        "sessionId": "123456"
+                    }
+                },
+                {
+                    "type": "agentAction",
+                    "payload": {
+                        "action": "Payments",
+                        "sessionId": "123456",
+                        "botUser": {}
+                    }
+                }
+            ]
+        }
+    },
+    "user": {
+        "userId": "3246969",
+        "channelName": "System_Global_Test",
+        "userChannelId": "808B84FF3A0C3C1CE053A700020A48B7",
+        "channelId": "4e214bb9-b6f2-4878-81a5-8ba840609172"
+    },
+    "agentSender": {}
+}

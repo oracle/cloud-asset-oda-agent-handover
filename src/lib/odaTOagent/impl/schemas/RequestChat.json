@@ -1,0 +1,13 @@
+{
+    "id": "/RequestChat",
+    "type": "object",
+    "properties": {
+        "userId": {
+            "type": "string"
+        },
+        "messagePayload": {
+            "$ref": "/RequestChatMessagePayload"
+        }
+    },
+    "required": ["userId", "messagePayload"]
+}

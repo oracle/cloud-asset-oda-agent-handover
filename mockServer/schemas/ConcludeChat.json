@@ -1,0 +1,13 @@
+{
+    "id": "/ConcludeChat",
+    "type": "object",
+    "properties": {
+        "sessionId": {
+            "type": "string"
+        },
+        "botUser": {
+            "$ref": "/BotUser"
+        }
+    },
+    "required": ["botUser", "sessionId"]
+}

@@ -1,0 +1,13 @@
+{
+    "id": "/AgentAction",
+    "type": "object",
+    "properties": {
+        "type": {
+            "type": "string"
+        },
+        "payload": {
+            "$ref": "/AgentActionMessagePayload"
+        }
+    },
+    "required": ["payload", "type"]
+}

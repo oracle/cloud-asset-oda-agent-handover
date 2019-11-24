@@ -1,0 +1,13 @@
+{
+    "id": "/ChatMessage",
+    "type": "object",
+    "properties": {
+        "type": {
+            "type": "string"
+        },
+        "payload": {
+            "$ref": "/ChatAcceptedMessagePayload"
+        }
+    },
+    "required": ["payload", "type"]
+}

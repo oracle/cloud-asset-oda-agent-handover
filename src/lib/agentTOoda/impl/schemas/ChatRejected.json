@@ -1,0 +1,13 @@
+{
+    "id": "/ChatRejected",
+    "type": "object",
+    "properties": {
+        "type": {
+            "type": "string"
+        },
+        "payload": {
+            "$ref": "/ChatRejectedMessagePayload"
+        }
+    },
+    "required": ["payload", "type"]
+}

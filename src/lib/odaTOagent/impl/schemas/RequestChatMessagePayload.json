@@ -1,0 +1,16 @@
+{
+    "id": "/RequestChatMessagePayload",
+    "type": "object",
+    "properties": {
+      "webhookChannelId": {"type" : "string"},
+      "channelName": {"type" : "string"},
+      "text": {"type" : "string"},
+      "type" : {"type" : "string"},
+      "channelId" :{"type": "string"},
+      "conversationHistory" : {"$ref" : "/ConversationHistoryList"},
+      "actions" : {"$ref" : "/ActionsList"},
+      "userProfile" : {"$ref" : "/UserProfile"},
+      "customProperties" : {"type" : "object"}
+    },
+    "required": ["webhookChannelId" , "channelName" , "text" , "type" , "channelId" , "userProfile"]
+  }

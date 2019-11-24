@@ -1,0 +1,8 @@
+{
+    "id" : "/BotUser",
+    "type" : "object",
+    "properties" : {
+        "userId" : {"type" : "string"}
+    },
+    "required" : ["userId"]
+}

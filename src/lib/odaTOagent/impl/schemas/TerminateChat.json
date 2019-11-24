@@ -1,0 +1,13 @@
+{
+    "id": "/TerminateChat",
+    "type": "object",
+    "properties": {
+        "userId": {
+            "type": "string"
+        },
+        "messagePayload": {
+            "$ref": "/MessagePayload"
+        }
+    },
+    "required": ["userId", "messagePayload"]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "/MessagePayload",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+
+    "botUser": {
+      "$ref": "/BotUser"
+    }
+  },
+  "required": ["botUser", "message"]
+}

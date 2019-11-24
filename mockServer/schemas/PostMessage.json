@@ -1,0 +1,16 @@
+{
+    "id": "/PostMessage",
+    "type": "object",
+    "properties": {
+        "message": {
+            "type": "string"
+        },
+        "sessionId": {
+            "type": "string"
+        },
+        "botUser": {
+            "$ref": "/BotUser"
+        }
+    },
+    "required": ["message", "botUser", "sessionId"]
+}

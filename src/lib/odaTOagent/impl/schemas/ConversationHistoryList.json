@@ -1,0 +1,6 @@
+{
+    "id": "/ConversationHistoryList",
+    "type": "array",
+    "items": { "$ref" : "/ConversationHistory"
+    }
+  }
