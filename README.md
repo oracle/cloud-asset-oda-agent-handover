@@ -21,9 +21,9 @@ As described in the below screenshot, this integration uses ODA webhook channel 
 
 ## Install
 
-* Clone project repository `git clone git@orahub.oraclecorp.com:ateam/oda_agent_handover.git`
-* Navigate to project directory `cd oda_agent_handover` and install required libraries `npm install`
-* Edit `oda_agent_handover/config/config.js` and update ODA webhook details as specified in section [Configure ODA Skill](#Configure-ODA-Skill). Also you need to update **AGENT_IMPL_FILE**, For more details check [Integrate with a third party agent system](#Integrate-with-a-third-party-agent-system)
+* Clone project repository `git clone git@github.com:oracle/cloud-asset-oda-agent-handover.git`
+* Navigate to project directory `cd cloud-asset-oda-agent-handover` and install required libraries `npm install`
+* Edit `cloud-asset-oda-agent-handover/config/config.js` and update ODA webhook details as specified in section [Configure ODA Skill](#Configure-ODA-Skill). Also you need to update **AGENT_IMPL_FILE**, For more details check [Integrate with a third party agent system](#Integrate-with-a-third-party-agent-system)
 
 ```js
 // Digital Assistance Webhook channel details
@@ -482,7 +482,7 @@ By default, project is configured with a mock agent server that outputs messages
 
 By default, project is configured to work with a sample agent mock server. Both mock server and webhook implementation assumes the [the following payloads](#Payloads) to be exchanged. In reality, it is not always possible to customize the backend agent system to accommodate these formats. Hence you need to do message transformation in between.
 
-To add a new implementation to your agent system, you need to create an implementation file under `oda_agent_handover\src\agentImpl` for example `MyAgentImpl.js` and then specify the name of that file in the config file as mentioned in the [installation section](#Install). If you created your agent implementation file inside a new folder for example `oda_agent_handover\src\agentImpl\myFolder\MyAgentImpl.js`, then you need to specify the name of that folder too, for example `module.exports.AGENT_IMPL_FILE = "/myFolder/MyAgentImpl";`. Your agent implementation must conforms with a specific structure,a sample is shipped in same folder `mockAgent.js`.
+To add a new implementation to your agent system, you need to create an implementation file under `cloud-asset-oda-agent-handover\src\agentImpl` for example `MyAgentImpl.js` and then specify the name of that file in the config file as mentioned in the [installation section](#Install). If you created your agent implementation file inside a new folder for example `cloud-asset-oda-agent-handover\src\agentImpl\myFolder\MyAgentImpl.js`, then you need to specify the name of that folder too, for example `module.exports.AGENT_IMPL_FILE = "/myFolder/MyAgentImpl";`. Your agent implementation must conforms with a specific structure,a sample is shipped in same folder `mockAgent.js`.
 
 ```javascript
 // Agent API Base URL
@@ -623,7 +623,7 @@ module.exports = MockAgent;
 
 ## Integrate with Oracle Engagement Cloud (19A or above)
 
-1. Edit `oda_agent_handover/config/config.js` and set the value of **module.exports.AGENT_IMPL_FILE** to **engagementCloud**
+1. Edit `cloud-asset-oda-agent-handover/config/config.js` and set the value of **module.exports.AGENT_IMPL_FILE** to **engagementCloud**
 
     ```javascript
     /**
@@ -633,7 +633,7 @@ module.exports = MockAgent;
     module.exports.AGENT_IMPL_FILE = "/engagementCloud/engagementCloud";
     ```
 
-2. Edit `oda_agent_handover/src/agentImpl/engagementCloud/ecUtils.js` and change values as needed. Note that you need to properly secure this file as it will contains your instance username/password.
+2. Edit `cloud-asset-oda-agent-handover/src/agentImpl/engagementCloud/ecUtils.js` and change values as needed. Note that you need to properly secure this file as it will contains your instance username/password.
 
     ```javascript
     // EC Base URL, for example https://myEcInstance.mydomain.com
@@ -662,10 +662,10 @@ module.exports = MockAgent;
 
 # Contributing
 
-`oda-agent-handover` is an open source project. See [CONTRIBUTING](CONTRIBUTING.md) for details.
+`cloud-asset-oda-agent-handover` is an open source project. See [CONTRIBUTING](CONTRIBUTING.md) for details.
 
-Oracle gratefully acknowledges the contributions to `oda-agent-handover` that have been made by the community.
+Oracle gratefully acknowledges the contributions to `cloud-asset-oda-agent-handover` that have been made by the community.
 
 # Considerations
 
-This is project is intended to be a sample and not an official extension to be used in production systems. For example, the implementation uses an in-memory cache to store metadata that is used by the implementation. It is possible to use an external full fledged database, for that you need to customize `oda_agent_handover/src/lib/userStore/impl/UserStore.js`. However for the sake of simplicity and demo purposes, an in-memory cache store is used.
+This is project is intended to be a sample and not an official extension to be used in production systems. For example, the implementation uses an in-memory cache to store metadata that is used by the implementation. It is possible to use an external full fledged database, for that you need to customize `cloud-asset-oda-agent-handover/src/lib/userStore/impl/UserStore.js`. However for the sake of simplicity and demo purposes, an in-memory cache store is used.
