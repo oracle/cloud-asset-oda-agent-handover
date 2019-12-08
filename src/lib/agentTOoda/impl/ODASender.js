@@ -106,6 +106,7 @@ class ODASender {
                     type: Config.CHAT_ACCEPTED_REJECTED_MESSAGE_TYPE,
                     text: "",//payload.payload.message,
                     status: payload.type,
+                    agentSessionId: payload.payload.sessionId,
                     channelUserState: {
                         channelSessionId: payload.payload.sessionId,
                         userId: userId,
