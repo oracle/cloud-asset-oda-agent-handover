@@ -83,9 +83,10 @@ app.post("/agent/message", async (req, res) => {
             if (Array.isArray(agentResponse)) {
                 agentResponse.reduce(async (previousPromise, response) => {
                     await previousPromise;
-                    return webhook.send(response);
+                    return await webhook.send(response);
                 }, Promise.resolve());
             } else {
+                
                 await webhook.send(agentResponse);
                 logger.info("Successfully sent message to ODA.");
             }

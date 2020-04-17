@@ -186,7 +186,7 @@ states:
 
 * To ensure conversation history is passed along, make sure to enable conversation logging.
 
-![alt text](docs/skillSettings.gif "Skill Settings")
+![alt text](docs/skillSettings.png "Skill Settings")
 
 ## Payloads
 
