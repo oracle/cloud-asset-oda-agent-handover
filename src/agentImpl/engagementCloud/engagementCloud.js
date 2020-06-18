@@ -53,6 +53,7 @@ class EngagementCloudImpl {
             }
             return payload;
         } catch (error) {
+            logger.error(error.message);
             throw error;
         }
     }
@@ -166,6 +167,7 @@ class EngagementCloudImpl {
         try {
             authResult = await UserStore.getUser(payload.botUser.userId);
         } catch (error) {
+            logger.error(error.message);
             throw error;
         }
         const baseUrl = util.format("https://%s/engagement/api/consumer/%s/v1/", authResult.domain, authResult.chatSiteName);
@@ -189,6 +191,7 @@ class EngagementCloudImpl {
             try {
                 authResult = await UserStore.getUser(payload.botUser.userId);
             } catch (error) {
+                logger.error(error.message);
                 throw error;
             }
             headers.sessionId = authResult.sessionId;
@@ -203,6 +206,7 @@ class EngagementCloudImpl {
             try {
                 authResult = await UserStore.getUser(payload.botUser.userId);
             } catch (error) {
+                logger.error(error.message);
                 throw error;
             }
             headers.sessionId = authResult.sessionId;
@@ -248,6 +252,7 @@ class EngagementCloudImpl {
                 await UserStore.mergeUser(payload.botUser.userId, authResult);
             }
         } catch (error) {
+            logger.error(error.message);
             throw error;
         }
     }
@@ -330,6 +335,7 @@ class EngagementCloudImpl {
         try {
             authResult = await UserStore.getUser(userId);
         } catch (error) {
+            logger.error(error.message);
             throw error;
         }
         if(authResult){
