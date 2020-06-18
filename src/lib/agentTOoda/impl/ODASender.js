@@ -75,6 +75,7 @@ class ODASender {
             return response;
 
         } catch (error) {
+            logger.error(error.message);
             throw error;
         }
     }

@@ -17,7 +17,7 @@ module.exports.send = async function (endpoint, payload) {
         let request = await agentImpl.prototype.buildRestCallPayload(payload, endpoint);
         logger.info("Sending Message to agent.");
         let result = await axios(request);
-        if (result && result.hasOwnProperty("data")) {
+        if (result && result.data) {
             await agentImpl.prototype.restCallResult(payload, result.data, endpoint , result.status);
         }
         logger.info("Successfully sent message to agent");

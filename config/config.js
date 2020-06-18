@@ -9,7 +9,6 @@ module.exports.DA_WEBHOOK_SECRET = "ODA_WEBHOOK_SECRET";
 
 /**
  * Webhook HTTP port.
- * If you are running on ACCS, port value is set automatically using environment variable process.env.PORT
  * If you are running locally, default HTTP port is set to 4444.
  */
 module.exports.PORT = process.env.PORT || 4444;
