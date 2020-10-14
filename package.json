@@ -18,7 +18,7 @@
     "@oracle/bots-node-sdk": "^2.3.4",
     "axios": "^0.19.2",
     "express": "^4.17.1",
-    "jsonschema": "^1.2.6",
+    "jsonschema": "1.2.6",
     "log4js": "^3.0.6"
   },
   "devDependencies": {
