@@ -119,7 +119,7 @@ class EngagementCloudImpl {
             else if (message.messageName === "RNEngagementWaitInformationChangedMessage") {
                 const waitingMessage = util.format("You are number (%s) in the queue, please be patient our agents will serve you in (%s) seconds", message.positionString , message.averageWaitTimeSecondsString);
                 agentResponse = {
-                    type: "delayed",
+                    type: "accepted",
                     payload: {
                         botUser: {
                             userId: payload.botUserId
